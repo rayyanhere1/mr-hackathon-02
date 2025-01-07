@@ -1,4 +1,7 @@
 import Image from "next/image";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -42,7 +45,7 @@ export default function Footer() {
                 <Image width={200} height={200} src="/icons/facebook.svg" alt="Facebook" className="h-6" />
               </a>
               <a href="#" aria-label="Twitter">
-                <Image width={200} height={200} src="/icons/twitter.svg" alt="Twitter" className="h-6" />
+                <Image width={200} height={200} src="/icons/twitter" alt="Twitter" className="h-6" />
               </a>
               <a href="#" aria-label="Instagram">
                 <Image width={200} height={200} src="/icons/instagram.svg" alt="Instagram" className="h-6" />

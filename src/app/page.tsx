@@ -31,25 +31,29 @@ const HomePage = () => {
         </div>
       </section>
       <section className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-black">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((_, idx) => (
-              <div key={idx} className="p-4 bg-white rounded-lg shadow-md">
-                <Image
-                  src="/images/nike-air-max-pulse.jpg"
-                  alt="images"
-                  width={300}
-                  height={200}
-                  className="mb-4 object-cover"
-                />
-                <h3 className="text-xl font-bold text-black">Nike Air Max Pulse</h3>
-                <p className="text-black">$120</p>
-              </div>
-            ))}
-          </div>
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-8 text-black">Featured Products</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[
+        { src: "/images/nike air max pulse.jpg", title: "Nike Air Max Pulse", price: "$120" },
+        { src: "/images/1.jpg", title: "Nike Air Force", price: "$100" },
+        { src: "/images/18.jpg", title: "Nike Air Max SYSTM", price: "$140" },
+      ].map((product, idx) => (
+        <div key={idx} className="p-4 bg-white rounded-lg shadow-md">
+          <Image
+            src={product.src}
+            alt={product.title}
+            width={500}
+            height={200}
+            className="mb-4 object-cover"
+          />
+          <h3 className="text-xl font-bold text-black">{product.title}</h3>
+          <p className="text-black">{product.price}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Gear Up Section */}
       <section className="p-8 bg-white text-black">

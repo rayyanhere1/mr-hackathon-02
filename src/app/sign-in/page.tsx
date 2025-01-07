@@ -53,7 +53,7 @@ const SignInPage = () => {
       <main className="flex-grow flex justify-center items-center bg-gray-50">
         <div className="max-w-md w-full text-center">
           <Image width={200} height={200}
-            src="/nike-logo.png"
+            src=""
             alt="Nike Logo"
             className="h-8 mx-auto mb-4"
           />
